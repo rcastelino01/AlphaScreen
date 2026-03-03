@@ -3,10 +3,9 @@
 #SBATCH --job-name="afscreen_gpuarray"
 #SBATCH -p gpu_h200
 #SBATCH --gpus=1
-#SBATCH --array=1-2%10
 #SBATCH --cpus-per-task=12
 #SBATCH --mem=80G
-#SBATCH --time=1-00:00:00
+#SBATCH --time=0-02:00:00
 #SBATCH -o "slurm_out/af-gpu-%A.%a.out"
 #SBATCH -e "slurm_out/af-gpu-%A.%a.err"
 

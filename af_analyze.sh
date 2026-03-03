@@ -23,4 +23,4 @@ rm Output/accessions.txt
 ml R/4.4.1-foss-2022b
 
 #Calculating average of iPTM values
-Rscript utilties/Mean_ipTM.R
+Rscript utilities/Mean_ipTM.R

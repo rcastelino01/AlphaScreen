@@ -1,7 +1,10 @@
-#!/bin/bashi
+#!/bin/bash
 
-ARRAY_A_ID=$(sbatch --parsable utilities/af_cpu.sh)
+jobtotal=$(ls -l AlphaScreen_Predictions/ | wc -l) 
+echo $jobtotal
+
+ARRAY_A_ID=$(sbatch --parsable --array=1-${jobtotal}%20 utilities/af_cpu.sh)
 echo "Submitted CPU jobs with ID: $ARRAY_A_ID"
 
-sbatch --dependency=aftercorr:$ARRAY_A_ID utilities/af_gpu.sh
+sbatch --dependency=aftercorr:$ARRAY_A_ID --array=1-${jobtotal}%10 utilities/af_gpu.sh
 echo "Submitted GPU jobs with dependency on CPU jobs (ID: $ARRAY_A_ID)"

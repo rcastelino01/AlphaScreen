@@ -2,10 +2,9 @@
 #SBATCH -A pi_st2222
 #SBATCH --job-name="afscreen_cpuarray"
 #SBATCH -p day
-#SBATCH --array=1-2%10
 #SBATCH --cpus-per-task=12
 #SBATCH --mem=80G
-#SBATCH --time=1-00:00:00
+#SBATCH --time=0-2:00:00
 #SBATCH -o "slurm_out/af-cpu-%A.%a.out"
 #SBATCH -e "slurm_out/af-cpu-%A.%a.err"
 
