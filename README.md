@@ -12,7 +12,7 @@ Due to space considerations, only run AlphaScreen in the **Project** directory. 
 ```
 git clone https://github.com/rcastelino01/AlphaScreen
 ```
-Create folders named **inputs** and **weights** within the cloned folder. Then place your .fasta file and your AlphaFold3 weights (your af3.bin.zst) file, in each of the respective folders.
+Place your .fasta file and your AlphaFold3 weights (your af3.bin.zst) file in the **inputs** and **weights** folders respectively..
 
 ### Running AlphaScreen
 To run AlphaScreen first request an interactive session and then run `af_setup.sh`.
