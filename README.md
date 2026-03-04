@@ -5,7 +5,7 @@ For Tang lab members, please remember to fill out the run tracker in the shared 
 ### Requirements
 * Request AlphaFold3 weights from Google DeepMind (https://docs.google.com/forms/d/e/1FAIpQLSfWZAgo1aYk0O4MuAXZj8xRQ8DafeFJnldNOnh_13qAx2ceZw/viewform)
 * Request a Bouchet cluster account from Yale's Center for Research Computing (https://docs.google.com/forms/d/e/1FAIpQLSfLghL1gSHRkIQj73zPzvLCJ0sojm9aUHZLQGBD_auD054gqA/viewform)
-* Compile a .fasta file of all of the proteins that you would like to screen your bait against. **Note that if your library is > 9,999 proteins, reach out by email for assistance**
+* Compile a .fasta file of all of the proteins that you would like to screen your bait against. **Note that if your library is > 9,999 proteins, reach out by email for assistance.**
 
 ### Prepare Directory
 Due to space considerations, only run AlphaScreen in the **Project** directory. After entering the **Project** directory, clone this git repository.
