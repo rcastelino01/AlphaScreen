@@ -23,14 +23,14 @@ done
 done
 done < "Output/complete_accessions.txt"
 
-paste -d', ' Output/pae_mins.txt Output/ipTMs.txt Output/accessions.txt Output/baitindices.txt > Output/statistics.csv
-rm Output/pae_mins.txt
-rm Output/ipTMs.txt
-rm Output/accessions.txt
-rm Output/baitindex.txt
+paste -d ',' Output/pae_mins.txt Output/ipTMs.txt Output/accessions.txt Output/baitindices.txt > Output/statistics.csv
+#rm Output/pae_mins.txt
+#rm Output/ipTMs.txt
+#rm Output/accessions.txt
+#rm Output/baitindices.txt
 
 #Loading in necessary modules
 ml R/4.4.1-foss-2022b
 
 #Calculating average of iPTM values
-#Rscript utilities/Mean_ipTM.R
+Rscript utilities/Statistics.R
