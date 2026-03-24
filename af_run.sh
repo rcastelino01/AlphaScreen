@@ -1,6 +1,6 @@
 #!/bin/bash
 
-jobtotal=$(ls -l AlphaScreen_Predictions/ | wc -l) 
+jobtotal=$(ls AlphaScreen_Predictions/ | wc -l) 
 echo $jobtotal
 
 ARRAY_A_ID=$(sbatch --parsable --array=1-${jobtotal}%40 utilities/af_cpu.sh)
