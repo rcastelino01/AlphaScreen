@@ -15,13 +15,13 @@ read -p "Enter number of baits: " num_baits
 
 count=1
 bait_length=0
-total_baitlength=()
+total_baitlength=0
 while [ $count -le $num_baits ];
 do
 	read -p "Enter the sequence of each bait, pressing enter between each: " bait_temp
 	baits+=(${bait_temp^^})
 	bait_length=${#bait_temp}
-	total_baitlength=$((total_length + bait_length))
+	total_baitlength=$((total_baitlength + bait_length))
 	((count++))
 done
 
