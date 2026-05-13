@@ -3,7 +3,7 @@ This is a guide on how to run an AlphaFold3 screen between your target protein b
 
 ### Requirements
 * Request AlphaFold3 weights from Google DeepMind (https://docs.google.com/forms/d/e/1FAIpQLSfWZAgo1aYk0O4MuAXZj8xRQ8DafeFJnldNOnh_13qAx2ceZw/viewform)
-* Request an account at your institution's HPC
+* Request an account at your institution's HPC.
 * Compile a .fasta file of all of the proteins that you would like to screen your bait against. If you library is greater than 9,999 you will have to break it up into separate chunks.
 
 ### Prepare Directory
