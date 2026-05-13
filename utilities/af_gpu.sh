@@ -1,11 +1,11 @@
 #!/bin/bash
-#SBATCH -A pi_st2222
+#SBATCH -A ##ACCOUNT NAME HERE##
 #SBATCH --job-name="afscreen_gpuarray"
-#SBATCH -p gpu_h200
+#SBATCH -p #NAME OF GPU PARTITION HERE#
 #SBATCH --gpus=1
-#SBATCH --cpus-per-task=12
-#SBATCH --mem=80G
-#SBATCH --time=0-02:00:00
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=24G
+#SBATCH --time=0-00:30:00
 #SBATCH -o "slurm_out/af-gpu-%A.%a.out"
 #SBATCH -e "slurm_out/af-gpu-%A.%a.err"
 
