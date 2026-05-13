@@ -13,7 +13,7 @@ git clone https://github.com/rcastelino01/AlphaScreen
 ```
 Place your .fasta file and your AlphaFold3 weights (your af3.bin.zst) file in the **inputs** and **weights** folders respectively.
 
-Update the account name and appropriate cpu & gpu partition names in **utilities/af_cpu.sh** and **utilities/af\\_gpu.sh** See your institution's HPC documentation for these details.
+Update the account name and appropriate cpu & gpu partition names in **utilities/af_cpu.sh** and **utilities/af\_gpu.sh** See your institution's HPC documentation for these details.
 
 ### Running AlphaScreen
 To run AlphaScreen first request an interactive session and then run `af_setup.sh`.
@@ -37,4 +37,4 @@ To analyze your results and compile the average iPTM scores across the top 5 pre
 salloc
 source af_analyze.sh
 ```
-Your scores are now stored in file called **Outputs/avg\\_statistics.csv**.
+Your scores are now stored in file called **Outputs/avg\_statistics.csv**.
