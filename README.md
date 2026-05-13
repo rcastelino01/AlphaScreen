@@ -1,5 +1,5 @@
 # AlphaScreen
-This is a guide on how to run an AlphaFold3 screen between your target protein bait(s) and a library of proteins of your choice. There are many excellent software packages for this same function, but this custom script was written for our own ease of extensibility. These scripts are specifically designed for use on Yale's high performance computing clusters (HPC) but it it also applicable for use on any other SLURM-based HPC. This guide assumes knowledge in basic Linux. For any questions, please email rithik.castelino@yale.edu.
+This is a guide on how to run an AlphaFold3 screen between your target protein bait(s) and a library of proteins of your choice. There are many excellent software packages for this same function, but this custom script was written for our own ease of extensibility. These scripts are specifically designed for use on Yale's high performance computing clusters (HPC) but it it also can be used on other SLURM-based HPCs upon minor cusotmization. This guide assumes knowledge in basic Linux. For any questions, please email rithik.castelino@yale.edu.
 
 ### Requirements
 * Request AlphaFold3 weights from Google DeepMind (https://docs.google.com/forms/d/e/1FAIpQLSfWZAgo1aYk0O4MuAXZj8xRQ8DafeFJnldNOnh_13qAx2ceZw/viewform)
